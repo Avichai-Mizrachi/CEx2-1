@@ -15,9 +15,6 @@ int main() {
             case 'C':
                 func3();
                 break;
-            case 'D':
-                letter = 'D';
-                break;
         }
     }
     return 0;
