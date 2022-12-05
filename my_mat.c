@@ -7,17 +7,16 @@ int minimum(int a, int b);
 void distance();
 
 void func1() {
-    int i,j;
-    for(i = 0;i < Ten;i++){
-        for(j = 0;j < Ten;j++){
-            scanf("%d",&a[i][j]);
+    for(int i = 0;i < Ten;i++){
+        for(int j = 0;j < Ten;j++){
+            scanf("%d", &a[i][j]);
         }
     }
     distance();
 }
 
 void func2(){
-    int b, c;
+    int b = 0, c = 0;
     scanf("%d%d", &b, &c);
     if (a[b][c] != 0)
     {
@@ -31,7 +30,7 @@ void func2(){
 
 void func3()
 {
-    int b, c;
+    int b = 0, c = 0;
     scanf("%d%d", &b, &c);
     if (a[b][c] == 0 || b == c)
     {
@@ -75,6 +74,12 @@ void distance()
 
 int minimum(int a, int b)
 {
+    if (a == 0){
+        return b;
+    }
+    if (b == 0){
+        return a;
+    }
     if (a < b)
     {
         return a;
