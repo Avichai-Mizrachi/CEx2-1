@@ -4,7 +4,7 @@
 int main() {
     char letter ='E';
     while (letter != 'D'){
-        scanf("%c ", &letter);
+        scanf("%c", &letter);
         switch (letter) {
             case 'A':
                 func1();
@@ -16,6 +16,7 @@ int main() {
                 func3();
                 break;
             case 'D':
+                letter = 'D';
                 break;
         }
     }
