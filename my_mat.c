@@ -10,7 +10,7 @@ void func1() {
     int i,j;
     for(i = 0;i < Ten;i++){
         for(j = 0;j < Ten;j++){
-            scanf(" %d",&a[i][j]);
+            scanf("%d",&a[i][j]);
         }
     }
     distance();
@@ -18,7 +18,7 @@ void func1() {
 
 void func2(){
     int b, c;
-    scanf(" %d %d", &b, &c);
+    scanf("%d%d", &b, &c);
     if (a[b][c] != 0)
     {
         printf("True\n");
@@ -32,7 +32,7 @@ void func2(){
 void func3()
 {
     int b, c;
-    scanf(" %d %d", &b, &c);
+    scanf("%d%d", &b, &c);
     if (a[b][c] == 0 || b == c)
     {
         printf("-1\n");
