@@ -1,6 +1,5 @@
 CC = gcc
 FLAGS = -Wall -g
-OBJ = main.o my_mat.o
 
 all: connections
 
